@@ -1,5 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
 
+:root {
+    /* 
+    ## Colors
+
+    ### Primary 
+    
+    */
+
+    --Pale-Violet /*(sub-heading at the top of the app UI)*/: hsl(276, 100%, 81%);
+    --Moderate-Violet /*(chat on the left)*/: hsl(276, 55%, 52%);
+    --Desaturated-Dark-Violet /*(chat on the right)*/: hsl(271, 15%, 43%);
+    --Grayish-Blue /*(placeholder text)*/: hsl(206, 6%, 79%);
+    --Very-Dark-Desaturated-Violet /*(main heading)*/: hsl(271, 36%, 24%);
+    --Dark-Grayish-Violet /*(paragraph)*/: hsl(270, 7%, 64%);
+
+    /* #### Gradients */
+
+    --Light-Magenta: hsl(293, 100%, 63%);
+    --Light-Violet: hsl(264, 100%, 61%);
+
+    /* ### Secondary */
+
+    --White: hsl(0, 0%, 100%);
+    --Light-Grayish-Violet /*(app background)*/: hsl(270, 20%, 96%);
+    --Very-Dark-Desaturated-Violet /*(submit button background)*/: hsl(271, 36%, 24%);
+    --Very-Light-Magenta /*(radio button outline)*/: hsl(289, 100%, 72%);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -33,6 +61,7 @@ body {
     top: 139px;
     left: 299px;
     background: white;
+    box-shadow: 7px 2px 30px rgba(41, 40, 40, 0.315);
     position: absolute;
     border-radius: 30px;
     padding: 15px;
@@ -96,6 +125,12 @@ body {
     cursor: pointer;
 }
 
+.chat {
+    background: var(--Light-Grayish-Violet);
+    padding: 10px;
+    border-radius: 0px 0px 30px 30px;
+}
+
 .menssage-left {
     width: 230px;
     font-size: .8em;
@@ -103,8 +138,20 @@ body {
     color: hsl(276, 55%, 52%);
     margin-top: 13px;
     padding: 10px 35px 10px 15px ;
-    border-radius: 17px;
+    border-radius: 17px 17px 17px 5px;
     clear: both;
+}
+
+.right {
+    margin-bottom: 30px;
+}
+
+.img-right img{
+    width: 65px;
+    height: 55px;
+    border-radius: 13px;
+    float: right;
+    margin: 20px 0px 0px 12px;
 }
 
 .menssage-right {
@@ -114,5 +161,80 @@ body {
     width: 230px;
     box-shadow: 0.0625rem 0.1875rem 0.6875rem 0.125rem rgba(52,13,88,.118);
     float: right;
-    margin: 13px 0px 13px 0px;
+    margin: 13px 0px 0px 0px;
+    padding: 10px 35px 10px 15px ;
+    border-radius: 17px 17px 5px 17px;
+    font-size: .8em;
 }
+
+.small {
+    width: 160px;
+    margin-bottom: 20px;
+}
+
+#option {
+    margin-top: 13px;
+}
+
+.time {
+    background: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    width: 260px;
+    margin-bottom: 13px;
+    padding: 13px;
+    border-radius: 17px 17px 17px 5px;
+    display: inline-block;
+    font-size: 0.8em;
+}
+
+.radio {
+    background: hsl(293, 100%, 63%);
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid hsla(279, 39%, 93%, 0.39);
+    cursor: pointer;
+    
+}
+
+.minute {
+    margin: 10px;
+    position: relative;
+    top: -2px;
+    color: white;
+}
+
+.price {
+    float: right;
+    margin-right: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.bnt input{
+    width: 100%;
+    padding: 12px;
+    border-radius: 30px;
+    border: none;
+    outline: 0;
+    margin: 10px 0px;
+}
+
+.bnt input::placeholder {
+    color: var(--Light-Grayish-Violet);
+    padding-left: 20px;
+}
+
+button {
+    width: 35px;
+    height: 35px;
+    border: none;
+    position: absolute;
+    right: 27px;
+    bottom: 5%;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+/* hsl(289, 100%, 72%) */
