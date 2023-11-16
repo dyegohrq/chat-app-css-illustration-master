@@ -11,83 +11,64 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; display: none;}
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
 
-  <div id="main">
-    <div id="gradient"></div>
-    <div id="phone">
-      <!-- Inicio -->
-      <div class="header">
-        <div id="top"></div>
-        <div id="return">
+  <img src="images/bg-top.svg" class="bg-top" alt="">
+  <div class="bg-bottom"></div>
+  <div class="container">
+    <div class="phone">
+      <div class="profile">
+        <div class="top"></div>
+        <div class="arrow-left">
           <img src="images/arrow-left.svg" alt="">
         </div>
-        <div id="profile">
-          <img src="images/avatar.jpg" alt="">
+        <div class="avatar">
+          <img src="images/avatar.jpg" alt="" style="width: 100%;">
         </div>
-        <div class="status">
-          <p id="name">Samuel Green</p>
-          <small id="assessment">Available to Walk</small>
-        </div>
-        <div id="burger">
+        <h3 class="name">Samuel Green</h3>
+        <small class="status">Available to Walk</small>
+        <div class="burger-menu">
           <img src="images/burger-menu.svg" alt="">
         </div>
       </div>
-      <!-- FIM -->
-
-      <!-- Inicio -->
-
       <div class="chat">
-        <div class="left">
-          <p class="menssage-left">That sounds great. I’d be happy with that.</p>
-          <p class="menssage-left">Could you send over some pictures of your dog, please?</p>
+        <p class="left">That sounds great. I’d be happy with that.</p>
+        <p class="left">Could you send over some pictures of your dog, please?</p>
+        <div class="photo-dog">
+          <img src="images/dog-image-1.jpg" alt="">
+          <img src="images/dog-image-2.jpg" alt="">
+          <img src="images/dog-image-3.jpg" alt="">
         </div>
-
-          <div class="img-right">
-            <img src="images/dog-image-3.jpg" alt="">
-            <img src="images/dog-image-2.jpg" alt="">
-            <img src="images/dog-image-1.jpg" alt="">
-          </div>
-          <p class="menssage-right">Here are a few pictures. She’s a happy girl!</p>
-          <p class="menssage-right small">Can you make it?</p>
-
-          <p class="menssage-left">She looks so happy! The time we discussed works. How long shall I take her out for?</p>
-
-          <div id="option">
-            <div class="time">
-              <div class="radio"></div>
-              <span class="minute">30 minute walk</span>
-              <span class="price">$29</span>
-            </div>
-            <div class="time">
-              <div class="radio "></div>
-              <span class="minute">1 hour walk</span>
-              <span class="price">$49</span>
-            </div>
-          </div>
-          <div class="bnt">
-            <input type="text" name="" id="" placeholder="Type a message…">
-            <button type="submit">
-              <img src="images/arrow-footer.svg" alt="" width="100%" height="100%">
-            </button>
-          </div>
-      </div>
-      <!-- FIM -->
-
-      
+        <p class="right">Here are a few pictures. She’s a happy girl!</p>
+        <p class="right">Can you make it?</p>
+        <p class="left">She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+        <div class="walk">
+          <span class="time">30 minute walk</span>
+          <small class="price">$29</small>
+        </div>
+        <div class="walk">
+          <span class="time">1 hour walk</span>
+          <small class="price">$49</small>
+        </div>
+        <div class="button">
+          <input type="text" placeholder="Type a message…">
+          <button><img src="images/arrow-footer.svg" alt=""></button>
+        </div>
     </div>
-    <div id="heading">
-      <h1>Simple booking</h1>
-      <p>
-        Stay in touch with our dog walkers through the chat interface. This makes it easy to
-        discuss arrangements and make bookings. Once the walk has been completed you can rate
-        your walker and book again all through the chat.
-      </p>
     </div>
+  </div>
+  <div class="container-text">
+    <h1 class="simple">Simple booking</h1>
+
+    <p class="text">
+      Stay in touch with our dog walkers through the chat interface. This makes it easy to
+      discuss arrangements and make bookings. Once the walk has been completed you can rate
+      your walker and book again all through the chat.
+    </p>
   </div>
   
   <div class="attribution">
