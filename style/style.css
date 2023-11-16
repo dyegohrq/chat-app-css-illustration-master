@@ -35,7 +35,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
 }
 
 body{
@@ -65,7 +64,7 @@ body{
 
     .container {
         position: relative;
-        width: 350px;
+        width: 375px;
         background: var(--White);
         top: 112px;
         left: 326px;
@@ -84,6 +83,7 @@ body{
         background: linear-gradient(to right, hsl(264, 100%, 61%),hsl(293, 100%, 63%));
         height: 67px;
         border-radius: 23px 23px 7px 7px;
+        border: 1px solid red;
     }
 
     .top {
@@ -93,10 +93,51 @@ body{
         margin: auto;
         border-radius: 0px 0px 13px 13px;    
     }
-
-    .avatar {
-        width: 20px;
+    .arrow-left {
+        display: inline;
+        float: left;
+        position: relative;
+        left: 19px;
+        bottom: -12px;
     }
 
+    .avatar img {
+        width: 25px;
+        height: 25px;
+        border: 1px solid #fff;
+        position: relative;
+        left: 32px;
+        bottom: -9px;
+        display: flex;
+        border-radius: 50%;
+    }
+
+    .name {
+        /* border: 1px solid yellow; */
+        display: inline;
+        font-size: .7em;
+        position: relative;
+        bottom: 21px;
+        left: 72px;
+        color: var(--White);
+        font-weight: 400;
+        letter-spacing: .1em;
+    }
+
+    .status {
+        position: relative;
+        top: -9px;
+        left: -18px;
+        font-size: .6em;
+        color: var(--Dark-Grayish-Violet);
+    }
+
+    .burger-menu {
+        float: right;
+        position: relative;
+        right: 20px;
+        bottom: 13px;
+    }
+    
     /* fim profile */
 /* Fim conf phone */
