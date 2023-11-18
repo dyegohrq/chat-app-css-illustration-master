@@ -40,13 +40,14 @@
 body{
     font-family: var(--font);
     font-size: 16px;
+    background: var(--Light-Grayish-Violet);
 } 
 
 /* Inicio img de fundo */
     .bg-top {
         position: absolute;
-        top: -299px;
-        left: -110px;
+        top: -373px;
+        left: -177px;
     }
 
     .bg-bottom {
@@ -64,10 +65,10 @@ body{
 
     .container {
         position: relative;
-        width: 375px;
+        width: 345px;
         background: var(--White);
-        top: 112px;
-        left: 326px;
+        top: 100px;
+        left: 247px;
         padding: 12px;
         border-radius: 30px;
     }
@@ -83,7 +84,6 @@ body{
         background: linear-gradient(to right, hsl(264, 100%, 61%),hsl(293, 100%, 63%));
         height: 67px;
         border-radius: 23px 23px 7px 7px;
-        border: 1px solid red;
     }
 
     .top {
@@ -93,51 +93,164 @@ body{
         margin: auto;
         border-radius: 0px 0px 13px 13px;    
     }
+
     .arrow-left {
         display: inline;
         float: left;
-        position: relative;
-        left: 19px;
-        bottom: -12px;
+        margin: 10px 15px 0 20px;
     }
 
     .avatar img {
-        width: 25px;
-        height: 25px;
+        width: 27px;
+        height: 27px;
         border: 1px solid #fff;
-        position: relative;
-        left: 32px;
-        bottom: -9px;
         display: flex;
         border-radius: 50%;
+        float: left;
+        margin: 7px 0px 0px 5px;
+    }
+
+    .walk {
+        display: inline-block;
+        text-align: center;
     }
 
     .name {
-        /* border: 1px solid yellow; */
-        display: inline;
+        display: flex;
         font-size: .7em;
-        position: relative;
-        bottom: 21px;
-        left: 72px;
         color: var(--White);
         font-weight: 400;
         letter-spacing: .1em;
+        margin: 8px 0px 0px 15px;
     }
 
     .status {
-        position: relative;
-        top: -9px;
-        left: -18px;
         font-size: .6em;
         color: var(--Dark-Grayish-Violet);
+        position: relative;
+        bottom: 5px;
     }
 
     .burger-menu {
         float: right;
-        position: relative;
-        right: 20px;
-        bottom: 13px;
+        margin: 10px 20px 0px 20px;
     }
     
     /* fim profile */
+
+    /* Chat */
+
+    .left {
+        width: 195px;
+        font-size: .7em;
+        margin: 13px 13px 8px 10px;
+        padding: 8px 20px 8px 18px;
+        background: rgb(233, 230, 235);
+        border-radius: 15px 13px 13px 5px;
+        color: var(--Moderate-Violet);
+    }
+
+    .right {
+        width: 195px;
+        float: right;
+        background: var(--White);
+        margin: 0px 10px 10px 0px;
+        font-size: .7em;
+        padding: 10px;
+        border-radius: 13px 13px 5px 13px;
+        letter-spacing: .5px;
+        box-shadow: 6px 5px 4px #0000001a;
+    }
+
+    .make {
+        width: 125px;
+        margin-bottom: 20px;
+    }
+
+    .time-price {
+        background: linear-gradient(to right, var(--Light-Magenta), var(--Light-Violet));
+        width: 240px;
+        margin: 13px 13px 8px 10px;
+        padding: 10px 20px 10px 18px;
+        border-radius: 15px 13px 13px 5px;
+        color: var(--White);
+    }
+
+    .circle {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: rgb(227, 55, 250);
+        float: left;
+        margin-right: 15px;
+        border-radius: 50%;
+        border: 3px solid var(--Very-Light-Magenta);
+        cursor: pointer;
+    }
+
+    .price {
+        float: right;
+        font-weight: bold;
+    }
+
+    /* foto dog */
+
+    .photo-dog img {
+        width: 55px;
+        height: 48px;
+        float: right;
+        margin: 10px 15px 10px 0px;
+        border-radius: 12px;
+    }
+
+    /* Button */
+
+    .button {
+        display: block;
+        margin: 17px 18px 0px 14px;;
+    }
+
+    .button input {
+        width: 100%;
+        padding: 9px 15px 9px 25px;
+        margin-bottom: 15px;
+        border-radius: 25px;
+        border: none;
+    }
+
+    .button input::placeholder {
+        color: var(--Grayish-Blue);
+    }
+
+    button {
+        position: absolute;
+        border: none;
+        right: 30px;
+        bottom: 28px;
+        background: #fff;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+   
 /* Fim conf phone */
+
+.container-text {
+    width: 442px;
+    margin: auto;
+    float: right;
+    position: relative;
+    top: -317px;
+    right: 11px;
+}
+
+.container-text h1 {
+    margin-bottom: 20px;
+    color: var(--Very-Dark-Desaturated-Violet);
+    font-size: 2.3em;
+    font-weight: 500;
+}
+
+.container-text .text {
+    line-height: 23px;
+    color: var(--Dark-Grayish-Violet);
+}
